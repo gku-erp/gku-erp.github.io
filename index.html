@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Guru Kashi University</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/images/splash-logo.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="styles.b9d3dbe72bbb0623d2e6.css"></head>
+
+<style>
+  :root {
+    --primary: #002147;
+    --primaryBackdrop: #0021477a;
+    --primaryBackground: #29466d;
+    --primaryTextColor: #ffffff;
+    --accent: #ffcc33;
+    --accentBackground: #ffcc337a;
+    --accentTextColor: #002147;
+    --secondary: #515151;
+    --secondaryBackground: #bfbdbd;
+    --disabled: #bfbdbd;
+    --disabledBackground: #bfbdbd;
+    --warn: #ff6666;
+    --default: #515151;
+    --defaultBackdrop: #999999;
+    --defaultBackground: #f1f1f1;
+  }
+
+  .powered-by {
+    text-align: center;
+    color: var(--default);
+  }
+
+  .splash {
+    text-align: center;
+    position: fixed;
+    /* width: 100%; */
+    right: 0;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    background-color: var(--defaultBackground) !important;
+    overflow-y: auto;
+    margin: auto;
+
+  }
+
+  .splash img {
+    height: 50vh;
+    margin-top: 10vh;
+  }
+
+  .splash h1 {
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 40px auto;
+    text-transform: uppercase;
+  }
+
+  .splash .progress {
+    height: 6px;
+    margin-top: 10vh;
+    margin-left: calc(50vw - 100px);
+    width: 180px;
+
+    padding: 1px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .splash .progress-bar {
+    height: 4px;
+    border-radius: 2px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+
+    background-color: var(--primary);
+    width: 90%;
+    animation: progressAnimationStrike 3s;
+  }
+
+  @keyframes progressAnimationStrike {
+    from {
+      width: 0
+    }
+
+    to {
+      width: 90%
+    }
+  }
+</style>
+
+<body>
+  <div class="container">
+  <app-root>
+    <div class="splash">
+      <img src="assets/images/splash-logo.png">
+
+      <div class="progress progress-striped">
+        <div class="progress-bar">
+        </div>
+      </div>
+      <h1>Loading&hellip;</h1>
+      <footer class="powered-by">Powered By Open Age</footer>
+
+    </div>
+  </app-root>
+</div>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-85934219-6', 'auto');
+        // ga('create', 'UA-85934219-6', 'none'); // 'none' while you are working on localhost
+        // ga('send', 'pageview');
+  </script>
+<script type="text/javascript" src="runtime.c935f59ebfc88125a72a.js"></script><script type="text/javascript" src="es2015-polyfills.133900a683405bf6f5da.js" nomodule></script><script type="text/javascript" src="polyfills.3c05b89367220158228e.js"></script><script type="text/javascript" src="scripts.74a5c4e786eb7247d65b.js"></script><script type="text/javascript" src="main.1662965009366460c864.js"></script></body>
+
+</html>
